@@ -3,7 +3,7 @@ import { useParams, NavLink } from "react-router-dom";
 import { useState, useEffect } from "react";
 import Loading from "./Loading";
 import { format } from "date-fns";
-
+import {Helmet} from 'react-helmet'
 
 
 const Detail = () => {
@@ -26,6 +26,10 @@ const Detail = () => {
 
   return (
     <div>
+        <Helmet>
+            <title>Github Repository</title>
+            <meta name="description" content="Github API Fetch"></meta>
+          </Helmet>
       <section className="Navigation">
         <NavLink to="/" className="navBar">
           Home

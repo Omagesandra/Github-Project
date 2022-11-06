@@ -1,10 +1,15 @@
 import React from 'react'
 import {NavLink} from 'react-router-dom'
+import {Helmet} from 'react-helmet'
 
 const Home = () => {
     
     return (
         <div>
+          <Helmet>
+            <title>Github Repository</title>
+            <meta name="description" content="Github API Fetch"></meta>
+          </Helmet>
             <section className="Navigation">
                 <NavLink to="/" className="navBar">Home</NavLink>
                 <NavLink to="/Repository" className="navBar">Repository</NavLink>

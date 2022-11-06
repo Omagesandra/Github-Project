@@ -3,6 +3,7 @@ import {NavLink, Link} from 'react-router-dom'
 import {useState, useEffect} from 'react'
 import Loading from './Loading'
 import ReactPaginate from 'react-paginate'
+import {Helmet} from 'react-helmet'
 
 
 const Repository = () => {
@@ -32,6 +33,10 @@ const Repository = () => {
 
     return (
         <div>
+            <Helmet>
+            <title>Github Repository</title>
+            <meta name="description" content="Github API Fetch"></meta>
+          </Helmet>
             <section className="Navigation">
                 <NavLink to="/" className="navBar">Home</NavLink>
                 <NavLink to="/Repository" className="navBar">Repository</NavLink>
