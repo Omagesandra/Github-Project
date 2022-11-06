@@ -1,38 +1,171 @@
-.App {
-  text-align: center;
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+    background-color : blue;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* Navigation Styling */
+.Navigation {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
 }
+.navBar {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+/* REPOSITORY STYLING */
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+}
+.Links {
+    margin-top: 30px;
+    max-width: 500px;
+    width: 350px;
+    background-color: white;
+    border-radius: 10px;
+}
+.linkDetails {
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+.repo-img {
+    border-radius: 50%;
+    width: 60px;
+    margin-top: 10px;
+}
+h1, h2{
+    margin-top: 20px;
+    font-weight: bold;
+}
+/* Pagination */
+.PaginationBtn{
+  list-style: none;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin:30px 10px;
+  width: 80%;
+  height: 8px;
+}
+.PaginationBtn a {
+    color: blue;
+    background-color: white;
+    border-radius: 5px;
+    padding: 8px;
+    margin: 20px 10px;
+}
+.PaginationBtn a:hover {
+    color: white;
+    background-color: blue;
+}
+.active a{
+    color: white;
+    background-color: blue;
+}
+.disabled a{
+     color: white;
+     background-color: blue;
+}
+/* Details Styling */
+.details-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
-.App-link {
-  color: #61dafb;
-}
+.container-wrapper {
+    margin-top: 30px;
+    max-width: 500px;
+    width: 350px;
+    background-color: white;
+    border-radius: 10px;
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+}
+.profile {
+    display: flex;
+
+}
+.profile-img {
+    border-radius: 50%;
+    width: 90px;
+    margin: 20px;
+}
+.profile-name {
+    color:blue;
+}
+.public {
+    background-color: blue;
+    color: white;
+    width: 60px;
+    margin-top: 5px;
+    height: 20px;
+    text-align: center;
+}
+.name {
+    margin: 10px;
+}
+.paragraph {
+    color: blue;
+    font-weight: italic;
+    margin:10px;
+    line-height: 20px;
+}
+ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    margin: 10px;
+    color: blue;
+    line-height: 23px;
+
+}
+/* Home styling */
+.about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 170px 10px;
+}
+.header {
+    color: orangered;
+    font-size: 3rem;
+    font-weight: bolder;
+}
+.message {
+    color:white;
+    font-size: 2rem;
+    font-weight: italic;
+    text-align: center;
+}
+/* Error */
+.error {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 150px 0;
+}
+.four {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: white;
+}
+.page {
+    font-size: 2rem;
+    color: orangered;
+    font-weight: italic;
+}
+.back, .load {
+    font-size: 1.5rem;
+    color: white;
 }
